@@ -31,7 +31,9 @@ public class MyCanvas extends Canvas
 	        graphics.setColor(Color.black);
 	        graphics.drawLine(40, 30, 330, 380);
 	        
-	        for (int i = 0; i < 350; i++)
+	        
+	        for (int x = 0; x < 20;){
+	        for (int i = 0; i < 325; i = i + 5)
 	        	{
 		        graphics.setColor(Color.green);
 		        graphics.fillRect(300, i, 50, 50);
@@ -41,6 +43,19 @@ public class MyCanvas extends Canvas
 		        graphics.setColor(Color.white);
 		        graphics.fillRect(300, i, 50, 50);
 	        	}
+	        
+	        for (int i = 325; i > 0; i = i - 5)
+	        	{
+		        graphics.setColor(Color.green);
+		        graphics.fillRect(300, i, 50, 50);
+		        
+		        delay();
+		        
+		        graphics.setColor(Color.white);
+		        graphics.fillRect(300, i, 50, 50);
+	        	}
+	        }
+	        
     		}
     	
     		public void delay()
