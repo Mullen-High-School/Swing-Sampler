@@ -32,6 +32,12 @@ public class Face extends Canvas
     	        
     	        graphics.setColor(Color.black);
     	        graphics.fillOval(250, 160, 25, 25);
+    	        
+    	        graphics.setColor(Color.blue);
+    	        graphics.fillOval(200, 200, 20, 20);
+    	        
+    	        graphics.setColor(Color.red);
+    	        graphics.fillOval(185, 250, 50, 50);
     	    
     		}
 
