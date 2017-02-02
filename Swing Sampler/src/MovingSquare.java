@@ -5,7 +5,7 @@ import java.awt.Graphics;
 import javax.swing.*;
 //COMMENT CMOMENT COMMENT CMOMENT
 
-public class movingSquare extends Canvas 
+public class MovingSquare extends Canvas 
 	{
 	private static final long	serialVersionUID	= 1L;
  
