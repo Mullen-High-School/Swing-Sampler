@@ -24,28 +24,26 @@ public class allWallsSquare extends Canvas
     	public void paint(Graphics graphics) 
     		{
    
-	        for (int x = 0; x < 1; x++){
-	        for (int i = 175; i < 350; i = i + 5)
+	        for (int x = 0; x < 10; x++){
+	        for (int i = 0; i < 350; i = i + 10)
 	        	{
 		        graphics.setColor(Color.green);
-		        graphics.fillRect(i - 175, i, 50, 50);
+		        graphics.fillRect(i, 175, 50, 50);
 		        
 		        delay();
 		        
 		        graphics.setColor(Color.white);
-		        graphics.fillRect(i, i, 50, 50);
+		        graphics.fillRect(i, 175, 50, 50);
 	        	}
-	        
-	        for (int i = 350; i > 0; i = i - 5)
-	        	{
-		        graphics.setColor(Color.green);
-		        graphics.fillRect(i, i, 50, 50);
+	        for (int i = 350; i > 0; i = i - 10){
+	        	graphics.setColor(Color.green);
+		        graphics.fillRect(i, 175, 50, 50);
 		        
 		        delay();
 		        
 		        graphics.setColor(Color.white);
-		        graphics.fillRect(i, i, 50, 50);
-	        	}
+		        graphics.fillRect(i, 175, 50, 50);
+	        }
 	        }
 	        
     		}

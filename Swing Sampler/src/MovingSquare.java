@@ -11,7 +11,7 @@ public class MovingSquare extends Canvas
  
     	public static void main(String[] args) 
     		{
-	        movingSquare canvas = new movingSquare();
+	        MovingSquare canvas = new MovingSquare();
 	        JFrame frame = new JFrame();
 	        frame.setSize(400, 400);
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
