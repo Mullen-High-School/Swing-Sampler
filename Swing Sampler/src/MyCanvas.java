@@ -3,13 +3,13 @@ import java.awt.*;
 import javax.swing.*;
 //COMMENT CMOMENT COMMENT CMOMENT
 
-public class MyCanvas extends Canvas 
+public class movingSquare extends Canvas 
 	{
 	private static final long	serialVersionUID	= 1L;
  
     	public static void main(String[] args) 
     		{
-	        MyCanvas canvas = new MyCanvas();
+	        MovingSquare canvas = new MovingSquare();
 	        JFrame frame = new JFrame();
 	        frame.setSize(500, 400);
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,7 +31,9 @@ public class MyCanvas extends Canvas
 	        graphics.setColor(Color.black);
 	        graphics.drawLine(40, 30, 330, 380);
 	        
-	        for (int i = 0; i < 350; i++)
+	        
+	        for (int x = 0; x < 20; x++){
+	        for (int i = 0; i < 325; i = i + 5)
 	        	{
 		        graphics.setColor(Color.green);
 		        graphics.fillRect(300, i, 50, 50);
@@ -41,6 +43,19 @@ public class MyCanvas extends Canvas
 		        graphics.setColor(Color.white);
 		        graphics.fillRect(300, i, 50, 50);
 	        	}
+	        
+	        for (int i = 325; i > 0; i = i - 5)
+	        	{
+		        graphics.setColor(Color.green);
+		        graphics.fillRect(300, i, 50, 50);
+		        
+		        delay();
+		        
+		        graphics.setColor(Color.white);
+		        graphics.fillRect(300, i, 50, 50);
+	        	}
+	        }
+	        
     		}
     	
     		public void delay()
